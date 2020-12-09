@@ -11,3 +11,7 @@ a.chat-button:hover {
     background-color: #1244B2;
     color: white;
 }
+
+html {
+    scroll-behavior: smooth;
+}
