@@ -1,0 +1,13 @@
+a.chat-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    background: white;
+    border: 1px solid;
+    border-radius: 0px;
+}
+
+a.chat-button:hover {
+    background-color: #1244B2;
+    color: white;
+}
