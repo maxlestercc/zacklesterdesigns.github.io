@@ -15,3 +15,21 @@ a.chat-button:hover {
 html {
     scroll-behavior: smooth;
 }
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Sansita', sans-serif;
+}
+
+h2 {
+    font-family: 'Sansita', sans-serif;
+}
+
+.chat-button {
+    font-family: 'Sansita', sans-serif;
+}
