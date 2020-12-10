@@ -19,42 +19,46 @@
 <body>
 <div class="container">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light px-0">
-            <a class="navbar-brand" href="#">
-                <img class="img-fluid" src="assets/ZL.svg" alt="ZL">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item work-anchor">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/zack-lester-9819891b5/" target="_blank">LinkedIn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="assets/Lester_Resume_2020.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="assets/ZL.svg" alt="ZL">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item work-anchor">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/zack-lester-9819891b5/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="assets/Lester_Resume_2020.pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <div class="mt-5">
-        <div class="row">
-            <div class="col-md-7 pt-4">
-                <h1 class="mb-0">Hi! <span style="color: #1244B2">I'm Zack</span>, Product/ UX Designer with a working knowledge of people</h1>
-                <p class="my-5">I’m a product designer based out of Montreal (oui, j’suis capable de parler français ;). I have a <span class="font-weight-bold">passion</span> for creating <span class="font-weight-bold">good</span> designs that work for the users. I love to have conversations about <span class="font-weight-bold">design</span> and find unique <span class="font-weight-bold">solutions</span> for any problem. </p>
-                <a href="mailto:zack.lester46@gmail.com" class="chat-button btn">Let's Chat!</a>
-            </div>
-            <div class="col-md-5 text-right my-3">
-                <img width="95%" height="auto" src="assets/headshot-circle.png" alt="headshot-circle">
+    <div class="above-the-fold">
+        <div class="flex-grow-1 d-flex flex-column justify-content-center">
+            <div class="row">
+                <div class="col-md-7 pt-4">
+                    <h1 class="mb-0">Hi! <a href="https://www.linkedin.com/in/zack-lester-9819891b5/"><span class="name" style="color: #1244B2">I'm Zack</span></a>, Product/ UX Designer with a working knowledge of people</h1>
+                    <p class="my-5">I’m a product designer based out of Montreal (oui, j’suis capable de parler français ;). I have a <span class="font-weight-bold">passion</span> for creating <span class="font-weight-bold">good</span> designs that work for the users. I love to have conversations about <span class="font-weight-bold">design</span> and find unique <span class="font-weight-bold">solutions</span> for any problem. </p>
+                    <a href="mailto:zack.lester46@gmail.com" class="chat-button btn">Let's Chat!</a>
+                </div>
+                <div class="col-md-5 text-right my-3">
+                    <img width="95%" height="auto" src="assets/headshot-circle.png" alt="headshot-circle" class="headshot">
+                </div>
             </div>
         </div>
-        <div class="text-center mt-4">
+        <div id="latest-project" class="text-center pb-4">
             <h2>My latest project!</h2>
             <div class="scroll-down">
                 <p class=>Scroll Down</p>
@@ -73,12 +77,25 @@
                 </a>
             </div>
         </div>
-        <div id="work">
-            <img class="img-fluid" src="assets/breakthru-2.png" alt="breakthru">
-        </div>
+    </div>
+    <div id="work">
+        <img class="img-fluid" src="assets/breakthru-2.png" alt="breakthru">
     </div>
 </div>
 
+<script>
+    $(".name").hover(function(){
+        $(".headshot").css("filter", "grayscale(0%)");
+    }, function(){
+        $(".headshot").css("filter", "grayscale(100%)");
+    });
+
+    $(".headshot").hover(function(){
+        $(".headshot").css("filter", "grayscale(0%)");
+    }, function(){
+        $(".headshot").css("filter", "grayscale(100%)");
+    });
+</script>
 </body>
 
 </html>

@@ -34,8 +34,39 @@ h2 {
     font-family: 'Sansita', sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+.name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.above-the-fold {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+    .above-the-fold {
+        height: 100vh;
+    }
+}
+
+/* @media only screen and (max-width: 1024px) {
     .scroll-down{
       display: none;
     }
+} */
+
+@media only screen and (max-width: 1024px) {
+    .headshot {
+        filter: grayscale(0%);
+    }
 }
+
