@@ -34,6 +34,12 @@ h2 {
     font-family: 'Sansita', sans-serif;
 }
 
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 768px) {
     .scroll-down{
       display: none;

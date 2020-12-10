@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="text-center mt-4">
-            <h2>My latest project!</h2>
+            <h2>My latest projects!</h2>
             <div class="scroll-down">
                 <p class=>Scroll Down</p>
                 <a href="#work">
@@ -73,9 +73,25 @@
                 </a>
             </div>
         </div>
+        <nav>
+            <div class="nav mt-4 justify-content-center" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="nav-breakthru-tab" data-bs-toggle="tab" href="#nav-breakthru" role="tab" aria-controls="nav-home" aria-selected="true">Breakthru</a>
+              <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+            </div>
+        </nav>
         <div id="work">
-            <img class="img-fluid" src="assets/breakthru-2.png" alt="breakthru">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-breakthru" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <img class="img-fluid" src="assets/breakthru-2.png" alt="breakthru">
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">2</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
+            </div>
         </div>
+        <!-- <div id="work">
+            <img class="img-fluid" src="assets/breakthru-2.png" alt="breakthru">
+        </div> -->
     </div>
 </div>
 
